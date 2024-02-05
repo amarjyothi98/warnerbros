@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #04006C;
+    --secondary: #015CFE;
+    --tertiary: #00E0FF;
+    --grey2: #555555;
+    --grey3: #888888;
+    --grey4: #AAAAAA;
+}
+
+.bgPrimaryContainer {
+    height: 450px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+}
+
+.mainLogo {
+    position: absolute;
+    top: 187px;
+}
+
+.indexPageContainer {
+    height: 100vh; 
+}
+
+.signInContainer {
+    width: 450px;
+    height: 440px;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.signInInputContainers {
+    margin: 30px 0 0 0;
+}
+
+.signInInput {
+    outline: none;
+    border: solid 1px var(--grey4);
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: var(--grey2);
+}
+
+.signInForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.forgotPass {
+    color: var(--secondary);
+    font-weight: 300;
+}
+
+.signInButton {
+    height: 40px;
+    background-color: var(--primary);
+    color: white;
+    border: 2px solid var(--tertiary);
+    margin-top: 40px;
+}
+
+
+/* -------------- for footer ----------------- */
+.footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: var(--grey3);
+}
