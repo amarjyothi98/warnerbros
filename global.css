@@ -31,7 +31,7 @@
 
 .signInContainer {
     width: 450px;
-    height: 440px;
+    height: 420px;
     padding: 20px;
     background-color: white;
     position: absolute;
@@ -86,4 +86,19 @@
 
     position: absolute;
     transform: translate(70%, 100px);
+}
+
+
+/* ---------- reset password --------- */
+.resetPassContainer {
+    width: 450px;
+    height: 320px;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
