@@ -11,6 +11,7 @@
 <body>
     <div class="bgPrimaryContainer"></div>
 
+    <!-- navbar component -->
     <nav class="navContainer">
         <div>
             <img src="/assets/WBD_Logo.svg" alt="logo">
@@ -37,5 +38,183 @@
         </div>
     </nav>
 
+
+    <div class="projectListContainer">
+        <div class="projectListHeadingContainer">
+            <h3>Project Catalog</h3>
+            <button class="addNewButton">
+                <img src="/assets/plus-circle.svg" alt="plus">
+                <p>Add New</p>
+            </button>
+        </div>
+        <div class="projectListToggle">
+            <p class="projectListToggleOption">All Projects</p>
+            <p class="projectListToggleOptionNew">Archived</p>
+        </div>
+        <div>
+            <div class="allProjects">
+                <div class="allProjectOptionsContainer">
+                    <p style="color: white; background-color: #04006C;" class="allProjectsOptions" id="allProjectsOption">All</p>
+                    <p class="allProjectsOptions">Draft</p>
+                    <p class="allProjectsOptions">Under Review</p>
+                    <p class="allProjectsOptions">Feasible</p>
+                    <p class="allProjectsOptions">In Progress</p>
+                    <p class="allProjectsOptions">Completed</p>
+                </div>
+                <div>
+                    <input type="text" placeholder="Search Project" class="allprojectInputBox">
+                    <input type="date" placeholder="Approved Date" class="allprojectInputBox">
+                </div>
+            </div>
+
+            <div class="tableContainer"> 
+                <table class="myTable" id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Project Name</th>
+                            <th>Approved Date</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>Project A</td>
+                            <td>-</td>
+                            <td>
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <img src="/assets/file-lines-solid 1.svg" alt="file">
+                                    Approved
+                                </div>
+                            </td>
+                            <td>
+                                <div style="display: flex; align-items: center; gap: 20px;">
+                                    <div style="display: flex; gap: 6px; color: #888888;"><img src="/assets/pen-solid 1.svg" alt="edit">Edit</div>
+                                    <div style="display: flex; gap: 6px; color: #888888;"><img src="/assets/archive.svg" alt="archive">Archive</div>
+                                </div>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleActiveClass() {
+            var allProjectsOption = document.getElementById("allProjectsOption");
+            allProjectsOption.classList.toggle("active");
+        }
+
+        document.getElementById("allProjectsOption").addEventListener("click", toggleActiveClass);
+
+
+        // --- table ---
+        var dataArray = [
+            { 
+                id: 1, 
+                projectName: 'Project Name Goes here', 
+                approvedDate: '-', 
+                status: 'Draft' 
+            },
+            { 
+                id: 2, 
+                projectName: 'Project Name Goes here', 
+                approvedDate: '-', 
+                status: 'Draft' 
+            },
+            { 
+                id: 3, 
+                projectName: 'Project Name Goes here', 
+                approvedDate: '-', 
+                status: 'Draft' 
+            },
+            { 
+                id: 4, 
+                projectName: 'Project Name Goes here', 
+                approvedDate: '12-31-2023', 
+                status: 'Draft' 
+            },
+            { 
+                id: 5, 
+                projectName: 'Project Name Goes here', 
+                approvedDate: '12-31-2023', 
+                status: 'Draft' 
+            },
+            { 
+                id: 6, 
+                projectName: 'Project Name Goes here', 
+                approvedDate: '-', 
+                status: 'Draft' 
+            },
+            { 
+                id: 7,
+                projectName: 'Project Name Goes here', 
+                approvedDate: '-', 
+                status: 'Draft' 
+            },
+            { 
+                id: 8,
+                projectName: 'Project Name Goes here', 
+                approvedDate: '-', 
+                status: 'Draft' 
+            },
+        ];
+
+        function populateTable() {
+            var tableBody = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
+
+            dataArray.forEach(function(data, index) {
+                var row = tableBody.insertRow(index);
+
+                row.insertCell(0).innerText = data.id;
+                row.insertCell(1).innerText = data.projectName;
+                row.insertCell(2).innerText = data.approvedDate;
+
+                var statusCell = row.insertCell(3);
+                var statusDiv = document.createElement('div');
+                statusDiv.style.display = 'flex';
+                statusDiv.style.alignItems = 'center';
+                statusDiv.style.gap = '10px';
+
+                var statusIcon = document.createElement('img');
+                statusIcon.src = "/assets/file-lines-solid 1.svg";
+                statusIcon.alt = "file";
+
+                var statusText = document.createTextNode(data.status);
+
+                statusDiv.appendChild(statusIcon);
+                statusDiv.appendChild(statusText);
+                statusCell.appendChild(statusDiv);
+
+                var actionsCell = row.insertCell(4);
+                var actionsDiv = document.createElement('div');
+                actionsDiv.style.display = 'flex';
+                actionsDiv.style.alignItems = 'center';
+                actionsDiv.style.gap = '20px';
+
+                var editDiv = document.createElement('div');
+                editDiv.style.display = 'flex';
+                editDiv.style.gap = '6px';
+                editDiv.style.color = '#888888';
+                editDiv.innerHTML = `<img src="/assets/pen-solid 1.svg" alt="edit">Edit`;
+
+                var archiveDiv = document.createElement('div');
+                archiveDiv.style.display = 'flex';
+                archiveDiv.style.gap = '6px';
+                archiveDiv.style.color = '#888888';
+                archiveDiv.innerHTML = `<img src="/assets/archive.svg" alt="archive">Archive`;
+
+                actionsDiv.appendChild(editDiv);
+                actionsDiv.appendChild(archiveDiv);
+                actionsCell.appendChild(actionsDiv);
+            });
+        }
+
+        populateTable();
+    </script>
 </body>
 </html>

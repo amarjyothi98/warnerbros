@@ -12,6 +12,8 @@
     --grey3: #888888;
     --grey4: #AAAAAA;
     --red: #EE4F4C;
+    --bg1: #EDECF4;
+    --bg2: #F8F8FB;
 }
 
 .bgPrimaryContainer {
@@ -24,12 +26,16 @@
     z-index: -1;
 }
 
+.active {
+    background-color: var(--primary);
+    color: white;
+}
 
 /* ------------ navbar ----------- */
 .navContainer {
     display: flex;
     justify-content: space-between;
-    padding: 30px 80px;
+    padding: 30px 120px;
 }
 
 .navRightContainer {
@@ -70,6 +76,7 @@
     border-radius: 14px;
     font-size: 14px;
     height: 15px;
+    cursor: pointer;
 }
 
 .profileContainer {
@@ -106,4 +113,116 @@
     align-items: center;
     justify-content: center;
     transform: translate(18px, -33px);
+}
+
+/* ------- project list container ------ */
+.projectListContainer {
+    width: 1200px;
+    background-color: white;
+    height: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.projectListHeadingContainer {
+    display: flex;
+    padding: 40px 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addNewButton {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    gap: 10px;
+    padding: 5px 15px 5px 10px;
+    border: 2px solid var(--tertiary);
+}
+
+.projectListToggle {
+    display: flex;
+    height: 40px;
+    margin: 0 0 0 40px;
+    align-items: center;
+}
+
+.projectListToggleOption {
+    background-color: var(--bg1);
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    border: 1px solid var(--bg1);
+}
+
+.projectListToggleOptionNew {
+    background-color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    border: 1px solid var(--bg1);
+}
+
+.allProjects {
+    height: 60px;
+    display: flex;
+    background-color: var(--bg1);
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 40px;
+}
+
+.allProjectOptionsContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.allProjectsOptions {
+    background-color: white;
+    border: 1px solid var(--grey4);
+    color: var(--grey2);
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+.allprojectInputBox {
+    padding: 5px 10px;
+    border: 1px solid var(--grey4);
+}
+
+.tableContainer {
+    margin: 0 40px;
+}
+
+.myTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.myTable th {
+    background-color: white;
+    padding: 10px;
+    text-align: left;
+    height: 30px;
+}
+
+.myTable tr {
+    background-color: var(--bg2);
+    height: 50px;
+}
+
+.myTable td {
+    padding: 10px;
+}
+
+.myTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
