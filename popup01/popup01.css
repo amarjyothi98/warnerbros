@@ -8,6 +8,7 @@
     --primary: #04006C;
     --secondary: #015CFE;
     --tertiary: #00E0FF;
+    --grey1: #333333;
     --grey2: #555555;
     --grey3: #888888;
     --grey4: #AAAAAA;
@@ -37,11 +38,12 @@
 .LineOne {
    font-weight: 200;
    font-size: large;
+   color: var(--grey1);
 }
 
 .buttonOne {
     border: 1px solid var(--primary);
-    padding: 5px 8px;
+    padding: 6px 10px;
     background-color: white;
     color: var(--primary);
     font-weight: bold;
