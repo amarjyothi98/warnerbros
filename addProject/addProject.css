@@ -1,0 +1,142 @@
+:root {
+    --primary: #04006C;
+    --secondary: #015CFE;
+    --tertiary: #00E0FF;
+    --grey2: #555555;
+    --grey3: #888888;
+    --grey4: #AAAAAA;
+    --red: #EE4F4C;
+    --bg1: #EDECF4;
+    --bg2: #F8F8FB;
+}
+
+.addProjectContainer {
+    background-color: white;
+    width: 1200px;
+    margin: 20px auto;
+    /* min-height: 80vh; */
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.backButton {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: white;
+    color: white;
+    gap: 10px;
+    padding: 8px;
+    border: 2px solid var(--primary);
+}
+
+.addProjectContentContainer {
+    margin: 20px 40px;;
+}
+
+.addProjectInput {
+    width: 400px;
+    padding: 10px;
+}
+
+.addProjectDropdown {
+    width: 424px;
+    padding: 10px;
+}
+
+.addProjectInputDate {
+    padding: 10px;
+    width: 180px;
+}
+
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px; 
+    cursor: pointer;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0; 
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: white; 
+    border: 1px solid var(--primary);
+}
+
+.checkmark::before {
+    content: '\2713';
+    display: block;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.checkbox-container input:checked + .checkmark {
+    background-color: var(--primary); 
+}
+
+.ChatContainer {
+    background-color: var(--bg1);
+    min-height: 50vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ChatRec {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.messageBox {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.ChatSend {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.chatInput {
+    background-color: white;
+    width: 1070px;
+    min-height: 70px;
+    border: 1px solid #AAAAAA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: 10px auto;
+}
+
+.chatButton {
+    border: 1px solid var(--primary);
+    background-color: white;
+    padding: 8px;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.sendButton {
+    border: 2px solid var(--tertiary);
+    background-color: var(--primary);
+    padding: 8px;
+    color: white;
+}

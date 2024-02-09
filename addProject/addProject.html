@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="addProject.css">
+        <link rel="stylesheet" href="/ProjectList/projectList.css">
+        <link rel="stylesheet" href="/creditHistory/creditHistory.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="bgPrimaryContainer"></div>
+        <!-- navbar component -->
+        <nav class="navContainer">
+            <div>
+                <img src="/assets/WBD_Logo.svg" alt="logo">
+            </div>
+            <div class="navRightContainer">
+                <div class="navRightOne">
+                    <img class="coinIcon" src="/assets/coins-solid 1.svg" alt="coins">
+                    <p class="navCredit">
+                        Credits:
+                        <span style="font-weight: bolder;">45</span>
+                    </p>
+                    <p class="navHistory">View History</p>
+                </div>
+                <p class="navDiv"></p>
+                <div class="navRightTwo">
+                    <img class="houseIcon" src="/assets/house-solid 1.svg" alt="house">
+                    <div>
+                        <img class="houseIcon" src="/assets/envelope-solid 1.svg" alt="envelope">
+                        <p class="messageCount">2</p>
+                    </div>
+                    <div class="profileContainer">
+                        <img class="profileIcon" src="/assets/people-mosaic_3 1.svg" alt="profile">
+                        <p style="color: white;">Jason Smith</p>
+                        <i class="fa-solid fa-angle-down" style="color: white;"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- --- add / edit project --- -->
+        <div class="addProjectContainer">
+            <div style="display: flex; justify-content: space-between; padding: 40px 40px 20px 40px;">
+                <h2>Add/Edit Project</h2>
+                <button class="backButton">
+                    <img src="/assets/back.svg" alt="back">
+                    <p style="color: black;">Back</p>
+                </button>
+            </div>
+            <div class="addProjectContentContainer">
+
+                <p style="font-weight: bold;">Project Specifications</p>
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555; width: 300px;">Project Name *</p>
+                    <input class="addProjectInput" type="text" placeholder="WBD Home Depot Q4 2023">
+                </div>
+
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555; width: 300px;">Select KPIs *</p>
+                    <div style="display: flex; gap: 20px;">
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">Sales (Receipt)</p>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">Sales (Debit/Credit)</p>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">Sales (Auto)</p>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">Web Visitation</p>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">Foot Traffic</p>
+                        </label>
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555;  width: 300px;">Advertised brand *</p>
+                    <input class="addProjectInput" type="text" placeholder="Home Depot">
+                </div>
+
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555;  width: 300px;">Brand category *</p>
+                    <select id="myDropdown" name="myDropdown" class="addProjectDropdown">
+                        <option value="option1">Retailer</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </div>
+
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555;  width: 300px;">Start & End Dates *</p>
+                    <div style="display: flex; justify-content: space-between; gap: 20px;"> 
+                        <input class="addProjectInputDate" type="date" placeholder="Start Date">
+                        <input class="addProjectInputDate" type="date" placeholder="End Date">
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555;  width: 300px;">Attribution Window *</p>
+                    <select id="myDropdown" name="myDropdown" class="addProjectDropdown">
+                        <option value="option1">30 Days</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </div>
+
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555; width: 300px;">Select KPIs *</p>
+                    <div style="display: flex; gap: 20px; flex-wrap: wrap; width: 700px;">
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">HBO Max</p>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">Discovery+</p>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">March Madness Live</p>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">WBD Stream</p>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">Bleacher Report</p>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">NBA.com</p>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p style="font-size: 14px; color: #555555; margin-top: 2px;">CNN</p>
+                        </label>
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555;  width: 300px;">Web Campaign ID</p>
+                    <input class="addProjectInput" type="text" placeholder="ABCD1234">
+                </div>
+
+                <div style="display: flex; align-items: center; margin: 20px 0;">
+                    <p style="color: #555555;  width: 300px;">Media Spend</p>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <p style="font-size: large; color: #555555;">$</p>
+                        <input class="addProjectInput" type="text" placeholder="ABCD1234">
+                    </div>
+                </div>
+            </div>
+
+            <!-- --- Notes --- -->
+            <div style="padding: 10px 40px;">
+                <p style="font-weight: bold; margin: 5px;">Notes</p>
+                <div class="ChatContainer">
+                    <div class="ChatRec">
+                        <img src="/assets/Frame 10.svg" alt="">
+                        <div class="messageBox">
+                            <p style="color: #888888; font-size: 14px;">31-12-2023, 19:30</p>
+                            <p style="font-size: 14px; color: #555555;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa.</p>
+                        </div>
+                    </div>
+
+                    <div class="ChatSend">
+                        <div class="messageBox">
+                            <p style="color: #888888; font-size: 14px; display: flex; justify-content: flex-end;">31-12-2023, 19:30</p>
+                            <p style="font-size: 14px; color: #555555; max-width: 800px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa consectetur, vel ullamcorper nunc laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa consectetur, vel ullamcorper nunc laoreet.</p>
+                        </div>
+                        <img src="/assets/wb.svg" alt="">
+                    </div>
+
+                    <div class="ChatSend">
+                        <div class="messageBox">
+                            <p style="color: #888888; font-size: 14px; display: flex; justify-content: flex-end;">31-12-2023, 19:30</p>
+                            <p style="font-size: 14px; color: #555555; max-width: 800px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa consectetur, vel ullamcorper nunc laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa consectetur, vel ullamcorper nunc laoreet.</p>
+                        </div>
+                        <img src="/assets/wb.svg" alt="">
+                    </div>
+
+                    <div class="ChatRec">
+                        <img src="/assets/Frame 10.svg" alt="">
+                        <div class="messageBox">
+                            <p style="color: #888888; font-size: 14px;">31-12-2023, 19:30</p>
+                            <p style="font-size: 14px; color: #555555;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa.</p>
+                        </div>
+                    </div>
+
+                    <div class="chatInput">
+                        <input style="width: 100%; padding: 5px; border: none; outline: none;" type="text">
+                        <button class="sendButton">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin: 0 40px 40px 40px; display: flex; justify-content: space-between;"> 
+                <div>
+                    <button class="chatButton">Cancel</button>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <button class="chatButton">Archive</button>
+                    <button class="chatButton">Save as Draft</button>
+                    <button class="sendButton">Submit</button>
+                </div>
+            </div>
+        </div>
+        <!-- --- footer --- -->
+        <footer class="footerContainerMain">
+            Powered by
+            <img src="/assets/logo_grey 1.svg" alt="footer-logo">
+        </footer>
+    </body>
+</html>
