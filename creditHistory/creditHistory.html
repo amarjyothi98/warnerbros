@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ProjectList/projectList.css">
+    <link rel="stylesheet" href="creditHistory.css">
+    <link rel="stylesheet" href="/messages/messages.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bgPrimaryContainer"></div>
+    <!-- navbar component -->
+    <nav class="navContainer">
+        <div>
+            <img src="/assets/WBD_Logo.svg" alt="logo">
+        </div>
+        <div class="navRightContainer">
+            <div class="navRightOne">
+                <img class="coinIcon" src="/assets/coins-solid 1.svg" alt="coins">
+                <p class="navCredit">Credits:
+                    <span style="font-weight: bolder;">45</span>
+                </p>
+                <p class="navHistory">View History</p>
+            </div>
+            <p class="navDiv"></p>
+            <div class="navRightTwo">
+                <img class="houseIcon" src="/assets/house-solid 1.svg" alt="house">
+                <div>
+                    <img class="houseIcon" src="/assets/envelope-solid 1.svg" alt="envelope">
+                    <p class="messageCount">2</p>
+                </div>
+                <div class="profileContainer">
+                    <img class="profileIcon" src="/assets/people-mosaic_3 1.svg" alt="profile">
+                    <p style="color: white;">Jason Smith</p>
+                    <i class="fa-solid fa-angle-down" style="color: white;"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- --- credit history --- -->
+    <div class="creditHistoryContainer">
+        <div style="display: flex; justify-content: space-between; padding: 40px 40px 20px 40px;">
+            <h2>Credit History</h2>
+            <p style="color: #333333;">Balance: <span style="font-size: large; font-weight: bold; color: black;">45</span></p>
+        </div>
+
+        <div class="allProjects">
+            <div class="allProjectOptionsContainer">
+                <p style="color: white; background-color: #04006C;" class="allProjectsOptions" id="allProjectsOption">All Credits</p>
+                <p class="allProjectsOptions">Debits Only</p>
+                <p class="allProjectsOptions">Credits Only</p>
+            </div>
+            
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <p style="color: #333333; font-size: 14px;">Show</p>
+                <select id="myDropdown" name="myDropdown" class="dropdownStyle">
+                    <option value="option1">Last 7 Days</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="tableContainer"> 
+            <table class="myTable" id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Details</th>
+                        <th>Credits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12-31-2023</td>
+                        <td>‘Project name’ approved</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr style="background-color: white;">
+                        <td>12-31-2023</td>
+                        <td>‘Project name’ approved</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr>
+                        <td>12-31-2023</td>
+                        <td>‘Project name’ approved</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr style="background-color: white;">
+                        <td>12-31-2023</td>
+                        <td>‘Project name’ approved</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr>
+                        <td>12-31-2023</td>
+                        <td>‘Project name’ approved</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr style="background-color: white;">
+                        <td>12-31-2023</td>
+                        <td>‘Project name’ approved</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr>
+                        <td>12-31-2023</td>
+                        <td>‘Project name’ approved</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr style="background-color: white;">
+                        <td>12-31-2023</td>
+                        <td>‘Project name’ approved</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr>
+                        <td>12-31-2023</td>
+                        <td>‘Project name’ approved</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr style="background-color: white;">
+                        <td>12-31-2023</td>
+                        <td>‘Project name’ approved</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr>
+                        <td>12-31-2023</td>
+                        <td>‘Project name’ approved</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr style="background-color: white;">
+                        <td>12-31-2023</td>
+                        <td>‘Project name’ approved</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr>
+                        <td>12-31-2023</td>
+                        <td>‘Project name’ approved</td>
+                        <td>-1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- --- paginator --- -->
+        <div class="paginatorContainer">
+            <div class="paginatorBox">
+                <p><img src="/assets/arrowL.svg" alt=""></p>
+            </div>
+            <div class="paginatorBox">
+                <p>1</p>
+            </div>
+            <div class="paginatorBox">
+                <p>2</p>
+            </div>
+            <div class="paginatorBox">
+                <p>3</p>
+            </div>
+            <div class="paginatorBox">
+                <p>4</p>
+            </div>
+            <div class="paginatorBox">
+                <p><img src="/assets/arrowR.svg" alt=""></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footerContainerMain">
+        Powered by <img src="/assets/logo_grey 1.svg" alt="footer-logo">
+    </footer>
+</body>
+</html>

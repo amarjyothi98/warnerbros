@@ -1,0 +1,24 @@
+.creditHistoryContainer {
+    width: 1200px;
+    background-color: white;
+    min-height: 80vh;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 0 0 50px 0;
+}
+
+.dropdownStyle {
+    outline: 1px solid #dedede;
+    padding: 5px 28px 5px 8px;
+}
+
+.footerContainerMain {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 5px;
+    color: var(--grey3);
+
+    width: fit-content;
+    margin: 50px auto;
+}
