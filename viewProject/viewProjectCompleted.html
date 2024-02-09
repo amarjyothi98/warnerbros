@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/ProjectList/projectList.css">
+        <link rel="stylesheet" href="viewProject.css">
+        <link rel="stylesheet" href="/addProject/addProject.css">
+        <link rel="stylesheet" href="/creditHistory/creditHistory.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="bgPrimaryContainer"></div>
+        <!-- navbar component -->
+        <nav class="navContainer">
+            <div>
+                <img src="/assets/WBD_Logo.svg" alt="logo">
+            </div>
+            <div class="navRightContainer">
+                <div class="navRightOne">
+                    <img class="coinIcon" src="/assets/coins-solid 1.svg" alt="coins">
+                    <p class="navCredit">
+                        Credits:
+                        <span style="font-weight: bolder;">45</span>
+                    </p>
+                    <p class="navHistory">View History</p>
+                </div>
+                <p class="navDiv"></p>
+                <div class="navRightTwo">
+                    <img class="houseIcon" src="/assets/house-solid 1.svg" alt="house">
+                    <div>
+                        <img class="houseIcon" src="/assets/envelope-solid 1.svg" alt="envelope">
+                        <p class="messageCount">2</p>
+                    </div>
+                    <div class="profileContainer">
+                        <img class="profileIcon" src="/assets/people-mosaic_3 1.svg" alt="profile">
+                        <p style="color: white;">Jason Smith</p>
+                        <i class="fa-solid fa-angle-down" style="color: white;"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- --- view Project --- -->
+        <div class="viewProjectContainer">
+            <!-- <div class="floatBox">
+                <p style="font-weight: bold;">Estimated delivery date</p>
+                <p>31-03-2024</p>
+            </div> -->
+            <div style="display: flex; justify-content: space-between; padding: 40px;">
+                <div style="display: flex; gap: 10px;">
+                    <img src="/assets/circle-check-solid 1.svg" alt="">
+                    <div>
+                        <h3 style="width: 300px;">Project Name Goes Here</h3>
+                        <p style="font-size: small;">Credits Spent :
+                            <span style="font-weight: bold;">2</span>
+                        </p>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <button class="backButton">
+                        <img src="/assets/file-arrow-down-solid 1.svg" alt="back">
+                        <p style="color: #04006C;">Download Excel</p>
+                    </button>
+                    <button class="backButton">
+                        <img src="/assets/file-arrow-down-solid 1.svg" alt="back">
+                        <p style="color: #04006C;">Download PPT</p>
+                    </button>
+                    <button class="backButton">
+                        <img src="/assets/back.svg" alt="back">
+                        <p style="color: #04006C;">Back</p>
+                    </button>
+                </div>
+            </div>
+            <div style="margin: 0 40px;">
+                <div style="display: flex; gap: 10px; align-items: center; font-size: 17px;">
+                    <p style="font-weight: bold;">Audience</p>
+                    <p style="font-size: small; color: #555555;">Source: ABCS Insights Panel Q1 2024</p>
+                </div>
+                <div style="margin: 15px 0 25px 0; display: flex; gap: 30px;">
+                    <div class="audienceBox">
+                        <p style="font-weight: bold;">Ad Impressions</p>
+                        <h3 style="color: #04006C;">1,00,036</h3>
+                    </div>
+                    <div class="audienceBox">
+                        <p style="width: 100px; font-weight: bold;">Ad Reach</p>
+                        <p style="font-size: 12px; color: #888888; width: 150px; text-align: right;">Available when the campaign ends</p>
+                    </div>
+                    <div class="audienceBox">
+                        <p style="font-weight: bold;">Frequency</p>
+                        <p style="font-size: 12px; color: #888888; width: 150px; text-align: right;">Available when the campaign ends</p>
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 0 40px;">
+                <p style="font-weight: bold; font-size: 17px;">Considerations</p>
+                <div style="font-size: 14px;">
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Foot Traffic</span>
+                            <span>:</span>
+                        </p>
+                        <p>Total Visits, Occasions, Penetration, Sig testing on Total Visits</p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Web Visits</span>
+                            <span>:</span>
+                        </p>
+                        <p>Total Visits. Total incremental Visits</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p style="font-weight: bold; font-size: 17px; margin: 40px 40px;">Sales Lift</p>
+                <div class="tableContainer" style="margin: 30px 40px; font-size: 14px;">
+                    <table class="myTable" id="dataTable">
+                        <thead>
+                            <tr>
+                                <th style="width: 100px;">Lysol Sales Effect N = 315,648T/315,816C</th>
+                                <th>Test</th>
+                                <th>Control</th>
+                                <th>Diff</th>
+                                <th>Diff %</th>
+                                <th>Stat Sig</th>
+                                <th>CPG Norms(% Lift)</th>
+                                <th>CPG Norms(Diff)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Basket Size</td>
+                                <td>$6.67</td>
+                                <td>8.20%</td>
+                                <td>1.96%</td>
+                                <td>23.85%</td>
+                                <td>-</td>
+                                <td>0.54%</td>
+                                <td>0.22%</td>
+                            </tr>
+                            <tr style="background-color: white;">
+                                <td>Sales Penetration (%)</td>
+                                <td>$6.67</td>
+                                <td>8.20%</td>
+                                <td>1.96%</td>
+                                <td>23.85%</td>
+                                <td>-</td>
+                                <td>0.54%</td>
+                                <td>0.22%</td>
+                            </tr>
+                            <tr>
+                                <td>Purchase Occassions</td>
+                                <td>$6.67</td>
+                                <td>8.20%</td>
+                                <td>1.96%</td>
+                                <td>23.85%</td>
+                                <td>-</td>
+                                <td>0.54%</td>
+                                <td>0.22%</td>
+                            </tr>
+                            <tr style="background-color: white;">
+                                <td>Sales Rate</td>
+                                <td>$6.67</td>
+                                <td>8.20%</td>
+                                <td>1.96%</td>
+                                <td>23.85%</td>
+                                <td>-</td>
+                                <td>0.54%</td>
+                                <td>0.22%</td>
+                            </tr>
+                            <tr>
+                                <td>Total Sales</td>
+                                <td>$6.67</td>
+                                <td>8.20%</td>
+                                <td>1.96%</td>
+                                <td>23.85%</td>
+                                <td>-</td>
+                                <td>0.54%</td>
+                                <td>0.22%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div style="margin: 20px 40px; font-size: 12px; color: #555555;">
+                <p><span style="font-weight: bold;">Basket Size ($) :</span> Average amount  spent per purchase during the measurement period.</p>
+                <p><span style="font-weight: bold;">Sales Penetration (%) :</span> Persentage of the sample population that made any purchases of the brand/product during the measurement period.</p>
+                <p><span style="font-weight: bold;">Purchase Occassions :</span> Average number of purchases by a buyer during the measurement period.</p>
+                <p><span style="font-weight: bold;">Sales Rate ($) : </span>Average dollars spent per buyer during the measurement period.</p>
+                <p><span style="font-weight: bold;">Total Sales ($) :</span> Total dollars spent per household during the measurement period.</p>
+                <p><span style="font-weight: bold;">Test :</span>  N = 157,908 | <span style="font-weight: bold;">Control :</span> N = 157,908</p>
+            </div>
+
+            <div>
+                <p style="margin: 40px 40px 20px 40px; font-weight: bold;">Sales Attribution</p>
+                <div class="tableContainer" style="margin: 30px 40px 5px 40px; font-size: 14px; width: 500px;">  
+                    <table class="myTable" id="dataTable" >
+                        <thead>
+                            <tr>
+                                <th>Lysol Sales Attribution N = 315,648T</th>
+                                <th>Exposed</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Campaign Reach</td>
+                                <td>2,975,538</td>
+                            </tr>
+                            <tr style="background-color: white;">
+                                <td>Incremental Purchases</td>
+                                <td>2,975,538</td>
+                            </tr>
+                            <tr>
+                                <td>Incremental Purchases ($)</td>
+                                <td>2,975,538</td>
+                            </tr>
+                            <tr style="background-color: white;">
+                                <td>Incremental Purchasers</td>
+                                <td>2,975,538</td>
+                            </tr>
+                            <tr>
+                                <td>Incremental ROAS*</td>
+                                <td>2,975,538</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="font-size: 12px; color: #555555; margin: 0 40px 40px 40px;">$15K media spend. Every $1 generated an incremental $30.74 of sales.</p>
+            </div>
+
+            <div style="margin: 10px 40px; display: flex; flex-direction: column; gap: 20px; ">
+                <p style="font-size: 16px; font-weight: bold;">Description of Matching Variables</p>
+                <p style="font-size: 14px; color: #555555;">Control group pre-processing matched on individual variables for this campaign.</p>
+                <div style="font-size: 14px;">
+                    <div style="color: #555555; display: flex; gap: 40px; margin-bottom: 10px;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Demos</span>
+                            <span>:</span>
+                        </p>
+                        <p>Geo, age, gender, HHI</p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Pre-Sales </span>
+                            <span>:</span>
+                        </p>
+                        <p>Test and Control groups are matched on pre-period brand/category sales</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="padding: 0 40px;">
+                <p style="font-weight: bold; margin: 10px 0; font-size: 17px;">Project Specifications</p>
+                <div style="font-size: 14px;">
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Select KPIs</span>
+                            <span>:</span>
+                        </p>
+                        <p>Sales (Receipt), Sales (Debit/Credit)</p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Advertised brand</span>
+                            <span>:</span>
+                        </p>
+                        <p>Home Depot</p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Brand category</span>
+                            <span>:</span>
+                        </p>
+                        <p>Retailer</p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Start & End Dates</span>
+                            <span>:</span>
+                        </p>
+                        <p style="display: flex; gap: 40px; align-items: center;">
+                            <span>Start Date: 12-31-2023</span>
+                            <span>End Date: 01-31-2024</span>
+                        </p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Attribution window</span>
+                            <span>:</span>
+                        </p>
+                        <p>30 Days</p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>WBD Property names</span>
+                            <span>:</span>
+                        </p>
+                        <p>HBO Max, Discovery+, WBD Stream, NBA.com, Bleacher Report, March Madness Live, CNN</p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>WBD Campaign ID</span>
+                            <span>:</span>
+                        </p>
+                        <p>ABCD1234</p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Media Spend</span>
+                            <span>:</span>
+                        </p>
+                        <p>$  --</p>
+                    </div>
+                </div>
+            </div>
+            <!-- --- Notes --- -->
+            <div style="padding: 30px 40px;">
+                <p style="font-weight: bold; margin: 5px;">Notes</p>
+                <div class="ChatContainer">
+                    <div class="ChatRec">
+                        <img src="/assets/Frame 10.svg" alt="">
+                        <div class="messageBox">
+                            <p style="color: #888888; font-size: 14px;">31-12-2023, 19:30</p>
+                            <p style="font-size: 14px; color: #555555;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa.</p>
+                        </div>
+                    </div>
+                    <div class="ChatSend">
+                        <div class="messageBox">
+                            <p style="color: #888888; font-size: 14px; display: flex; justify-content: flex-end;">31-12-2023, 19:30</p>
+                            <p style="font-size: 14px; color: #555555; max-width: 800px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa consectetur, vel ullamcorper nunc laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa consectetur, vel ullamcorper nunc laoreet.</p>
+                        </div>
+                        <img src="/assets/wb.svg" alt="">
+                    </div>
+                    <div class="ChatSend">
+                        <div class="messageBox">
+                            <p style="color: #888888; font-size: 14px; display: flex; justify-content: flex-end;">31-12-2023, 19:30</p>
+                            <p style="font-size: 14px; color: #555555; max-width: 800px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa consectetur, vel ullamcorper nunc laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa consectetur, vel ullamcorper nunc laoreet.</p>
+                        </div>
+                        <img src="/assets/wb.svg" alt="">
+                    </div>
+                    <div class="ChatRec">
+                        <img src="/assets/Frame 10.svg" alt="">
+                        <div class="messageBox">
+                            <p style="color: #888888; font-size: 14px;">31-12-2023, 19:30</p>
+                            <p style="font-size: 14px; color: #555555;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --- footer --- -->
+        <footer class="footerContainerMain">
+            Powered by
+            <img src="/assets/logo_grey 1.svg" alt="footer-logo">
+        </footer>
+    </body>
+</html>
