@@ -35,7 +35,9 @@
 .navContainer {
     display: flex;
     justify-content: space-between;
-    padding: 30px 120px;
+    padding: 30px 0;
+    width: 1240px;
+    margin: 0 auto;
 }
 
 .navRightContainer {
