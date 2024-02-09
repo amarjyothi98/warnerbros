@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/ProjectList/projectList.css">
+        <link rel="stylesheet" href="viewProject.css">
+        <link rel="stylesheet" href="/addProject/addProject.css">
+        <link rel="stylesheet" href="/creditHistory/creditHistory.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="bgPrimaryContainer"></div>
+        <!-- navbar component -->
+        <nav class="navContainer">
+            <div>
+                <img src="/assets/WBD_Logo.svg" alt="logo">
+            </div>
+            <div class="navRightContainer">
+                <div class="navRightOne">
+                    <img class="coinIcon" src="/assets/coins-solid 1.svg" alt="coins">
+                    <p class="navCredit">Credits:
+                        <span style="font-weight: bolder;">45</span>
+                    </p>
+                    <p class="navHistory">View History</p>
+                </div>
+                <p class="navDiv"></p>
+                <div class="navRightTwo">
+                    <img class="houseIcon" src="/assets/house-solid 1.svg" alt="house">
+                    <div>
+                        <img class="houseIcon" src="/assets/envelope-solid 1.svg" alt="envelope">
+                        <p class="messageCount">2</p>
+                    </div>
+                    <div class="profileContainer">
+                        <img class="profileIcon" src="/assets/people-mosaic_3 1.svg" alt="profile">
+                        <p style="color: white;">Jason Smith</p>
+                        <i class="fa-solid fa-angle-down" style="color: white;"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- --- view Project --- -->
+        <div class="viewProjectContainer">
+
+            <!-- <div class="floatBox">
+                <p style="font-weight: bold;">Estimated delivery date</p>
+                <p>31-03-2024</p>
+            </div> -->
+
+            <div style="display: flex; justify-content: space-between; padding: 40px;">
+                <div style="display: flex; gap: 10px;">
+                    <img src="/assets/spinner-solid 1.svg" alt="">
+                    <div>
+                        <h3 style="width: 300px;">Project Name Goes Here</h3>
+                        <p style="font-size: small;">Credits Required : <span style="font-weight: bold;">2</span></p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 10px;">
+                    <button class="backButton">
+                        <img src="/assets/back.svg" alt="back">
+                        <p style="color: #04006C;">Back</p>
+                    </button>
+                </div>
+            </div>
+
+            <div style="margin: 0 40px;">
+                <div style="display: flex; gap: 10px; align-items: center; font-size: 17px;">
+                    <p style="font-weight: bold;">Audience</p>
+                    <p style="font-size: small; color: #555555;">Source: ABCS Insights Panel Q1 2024</p>
+                </div>
+
+                <div style="margin: 15px 0 25px 0; display: flex; gap: 30px;">
+                    <div class="audienceBox">
+                        <p style="font-weight: bold;">Ad Impressions</p>
+                        <h3 style="color: #04006C;">1,00,036</h3>
+                    </div>
+                    <div class="audienceBox">
+                        <p style="width: 100px; font-weight: bold;">Ad Reach</p>
+                        <p style="font-size: 12px; color: #888888; width: 150px; text-align: right;">Available when the campaign ends</p>
+                    </div>
+                    <div class="audienceBox">
+                        <p style="font-weight: bold;">Frequency</p>
+                        <p style="font-size: 12px; color: #888888; width: 150px; text-align: right;">Available when the campaign ends</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="padding: 0 40px;">
+                <p style="font-weight: bold; margin: 10px 0; font-size: 17px;">Project Specifications</p>
+                <div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Select KPIs</span>
+                            <span>:</span>
+                        </p>
+                        <p>Sales (Receipt), Sales (Debit/Credit)</p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Advertised brand</span>
+                            <span>:</span>
+                        </p>
+                        <p>Home Depot</p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Brand category</span>
+                            <span>:</span>
+                        </p>
+                        <p>Retailer</p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Start & End Dates</span>
+                            <span>:</span>
+                        </p>
+                        <p style="display: flex; gap: 40px; align-items: center;">
+                            <span>Start Date: 12-31-2023</span>
+                            <span>End Date: 01-31-2024</span>
+                        </p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Attribution window</span>
+                            <span>:</span>
+                        </p>
+                        <p>30 Days</p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>WBD Property names</span>
+                            <span>:</span>
+                        </p>
+                        <p>HBO Max, Discovery+, WBD Stream, NBA.com, Bleacher Report, March Madness Live, CNN</p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>WBD Campaign ID</span>
+                            <span>:</span>
+                        </p>
+                        <p>ABCD1234</p>
+                    </div>
+                    <div style="color: #555555; display: flex; gap: 40px; margin: 20px 0;">
+                        <p style="width: 400px; display: flex; justify-content: space-between;">
+                            <span>Media Spend</span>
+                            <span>:</span>
+                        </p>
+                        <p>$  --</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- --- Notes --- -->
+             <div style="padding: 30px 40px;">
+                <p style="font-weight: bold; margin: 5px;">Notes</p>
+                <div class="ChatContainer">
+                    <div class="ChatRec">
+                        <img src="/assets/Frame 10.svg" alt="">
+                        <div class="messageBox">
+                            <p style="color: #888888; font-size: 14px;">31-12-2023, 19:30</p>
+                            <p style="font-size: 14px; color: #555555;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa.</p>
+                        </div>
+                    </div>
+
+                    <div class="ChatSend">
+                        <div class="messageBox">
+                            <p style="color: #888888; font-size: 14px; display: flex; justify-content: flex-end;">31-12-2023, 19:30</p>
+                            <p style="font-size: 14px; color: #555555; max-width: 800px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa consectetur, vel ullamcorper nunc laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa consectetur, vel ullamcorper nunc laoreet.</p>
+                        </div>
+                        <img src="/assets/wb.svg" alt="">
+                    </div>
+
+                    <div class="ChatSend">
+                        <div class="messageBox">
+                            <p style="color: #888888; font-size: 14px; display: flex; justify-content: flex-end;">31-12-2023, 19:30</p>
+                            <p style="font-size: 14px; color: #555555; max-width: 800px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa consectetur, vel ullamcorper nunc laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa consectetur, vel ullamcorper nunc laoreet.</p>
+                        </div>
+                        <img src="/assets/wb.svg" alt="">
+                    </div>
+
+                    <div class="ChatRec">
+                        <img src="/assets/Frame 10.svg" alt="">
+                        <div class="messageBox">
+                            <p style="color: #888888; font-size: 14px;">31-12-2023, 19:30</p>
+                            <p style="font-size: 14px; color: #555555;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut facilisis nulla, non aliquam libero. Nunc pretium massa nec massa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- --- footer --- -->
+        <footer class="footerContainerMain">
+            Powered by
+            <img src="/assets/logo_grey 1.svg" alt="footer-logo">
+        </footer>
+    </body>
+</html>
