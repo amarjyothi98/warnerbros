@@ -8,7 +8,8 @@
 </head>
 <body>
     <div class="popupOneContainer">
-        <div class="popupOneBox">
+        <button onclick="toggleDiv()" style="position: absolute; top: 90px;">Toggle Pop Up</button>
+        <div class="popupOneBox" id="hiddenDiv">
             <div class="LineOneContainer">
                 <p class="LineOne"><span style="font-weight: bold;">“Project name goes here”</span> is now Unarchived</p>
                 <img src="/assets/Vector.svg" alt="cross" style="cursor: pointer;">
@@ -23,5 +24,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function toggleDiv() {
+            var div = document.getElementById('hiddenDiv');
+            if (div.style.display === 'none') {
+                div.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>

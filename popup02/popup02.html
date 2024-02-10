@@ -9,7 +9,8 @@
     </head>
     <body>
         <div class="popupOneContainer">
-            <div class="popupOneBoxMod">
+            <button onclick="toggleDiv()" style="position: absolute; top: 90px;">Toggle Pop Up</button>
+            <div class="popupOneBoxMod" id="hiddenDiv">
                 <div class="LineOneContainer">
                     <p class="LineOneMod">
                         <span style="font-weight: bold;">“Project name goes here”</span>
@@ -31,5 +32,16 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            function toggleDiv() {
+                var div = document.getElementById('hiddenDiv');
+                if (div.style.display === 'none') {
+                    div.style.display = 'block';
+                } else {
+                    div.style.display = 'none';
+                }
+            }
+        </script>
     </body>
 </html>
