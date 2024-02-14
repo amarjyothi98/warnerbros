@@ -9,17 +9,20 @@
 <body>
     <div class="popupOneContainer">
         <button onclick="toggleDiv()" style="position: absolute; top: 90px;">Toggle Pop Up</button>
-        <div class="popupOneBox" id="hiddenDiv">
-            <div class="LineOneContainer">
-                <p class="LineOne"><span style="font-weight: bold;">“Project name goes here”</span> is now Unarchived</p>
-                <img src="/assets/Vector.svg" alt="cross" style="cursor: pointer;">
-            </div>
-            <p style="margin: 30px 20px 10px 20px;">This project will be now available under <span style="font-weight: bold;">All Projects.</span></p>
-            <div style="display: flex; justify-content: space-between; margin: 40px 20px 0 20px;">
-                <button class="buttonOne">Close</button>
-                <div>
-                    <button class="buttonOne">View Project Details</button>
-                    <button class="buttonOne">Edit Project </button>
+        <div id="hiddenDiv">
+            <div class="popupWrapper" onclick="toggleDiv()"></div>
+            <div class="popupOneBox">
+                <div class="LineOneContainer">
+                    <p class="LineOne"><span style="font-weight: bold;">“Project name goes here”</span> is now Unarchived</p>
+                    <img src="/assets/Vector.svg" alt="cross" style="cursor: pointer;">
+                </div>
+                <p style="margin: 30px 20px 10px 20px;">This project will be now available under <span style="font-weight: bold;">All Projects.</span></p>
+                <div style="display: flex; justify-content: space-between; margin: 40px 20px 0 20px;">
+                    <button class="buttonOne">Close</button>
+                    <div>
+                        <button class="buttonOne">View Project Details</button>
+                        <button class="buttonOne">Edit Project </button>
+                    </div>
                 </div>
             </div>
         </div>
